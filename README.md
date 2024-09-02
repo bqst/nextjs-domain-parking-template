@@ -2,6 +2,10 @@
 
 This project is a Next.js application designed for a website that displays a domain for sale. It includes a contact form that allows users to send messages via email. Upon form submission, an email is sent using Resend.
 
+## Deploy with Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template&env=SITE_NAME,SITE_URL,EMAIL_FROM,EMAIL_TO,RESEND_API_KEY&envDescription=Required%20environment%20variables%20for%20the%20Next.js%20Domain%20Parking%20Template&envLink=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template%23installation)
+
 ## Prerequisites
 
 - Node.js
@@ -9,6 +13,13 @@ This project is a Next.js application designed for a website that displays a dom
 - Resend API Key: An API key from [Resend](https://resend.com) for sending emails.
 
 ## Installation
+
+Clone the repository:
+
+```bash
+git clone git@github.com:bqst/nextjs-domain-parking-template.git
+cd nextjs-domain-parking-template
+```
 
 Copy the `.env.example` file to `.env.local` and fill in the required environment variables.
 
