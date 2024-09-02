@@ -31,7 +31,7 @@ cp .env.example .env.local
 
 Fill in the following environment variables:
 
-- `NEXT_PUBLIC_URL`: The URL of the website.
+- `NEXT_PUBLIC_VERCEL_URL`: The URL of the website (it should be set automatically by Vercel in production).
 - `EMAIL_FROM`: The email address that emails will be sent from.
 - `EMAIL_TO`: The email address that emails will be sent to.
 - `RESEND_API_KEY`: The API key from Resend.
