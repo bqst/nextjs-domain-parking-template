@@ -12,7 +12,7 @@ export async function sendMessage(prevState: any, formData: FormData) {
     const { data } = await resend.emails.send({
       from: siteConfig.emailFrom,
       to: siteConfig.emailTo,
-      subject: `[${siteConfig.name}] New message from the website`,
+      subject: `[${siteConfig.url}] New message from the website`,
       html:
         "<ul>" +
         Object.entries(rawData)

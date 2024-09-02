@@ -4,7 +4,15 @@ If you have a domain that you're not using like me, you can use this template to
 
 ## Deploy with Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template&env=SITE_NAME,SITE_URL,EMAIL_FROM,EMAIL_TO,RESEND_API_KEY&envDescription=Required%20environment%20variables%20for%20the%20Next.js%20Domain%20Parking%20Template&envLink=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template%23installation)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template&env=NEXT_PUBLIC_URL,EMAIL_FROM,EMAIL_TO,RESEND_API_KEY&envDescription=Required%20environment%20variables%20for%20the%20Next.js%20Domain%20Parking%20Template&envLink=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template%23installation)
+
+You can host multiple domains in one Vercel project by setting the `NEXT_PUBLIC_URL` environment variable to `https://$NEXT_PUBLIC_VERCEL_URL`. This will allow you to deploy the same codebase to multiple domains and have the website display the correct domain name.
+
+See also: [How to get the current URL / domain](https://github.com/vercel/next.js/discussions/16429)
+
+```bash
+NEXT_PUBLIC_URL=https://$NEXT_PUBLIC_VERCEL_URL
+````
 
 ## Prerequisites
 
@@ -29,8 +37,7 @@ cp .env.example .env.local
 
 Fill in the following environment variables:
 
-- `SITE_NAME`: The name of the website.
-- `SITE_URL`: The URL of the website.
+- `NEXT_PUBLIC_URL`: The URL of the website.
 - `EMAIL_FROM`: The email address that emails will be sent from.
 - `EMAIL_TO`: The email address that emails will be sent to.
 - `RESEND_API_KEY`: The API key from Resend.

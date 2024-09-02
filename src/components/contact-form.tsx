@@ -17,6 +17,11 @@ export default function ContactForm() {
       }}
       className="mx-auto mt-16 max-w-xl sm:mt-20"
     >
+      <input
+        type="hidden"
+        name="url"
+        value={`${process.env.NEXT_PUBLIC_URL}`}
+      />
       <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         <div>
           <label
