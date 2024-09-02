@@ -6,7 +6,7 @@ If you have a domain that you're not using like me, you can use this template to
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template&env=EMAIL_FROM,EMAIL_TO,RESEND_API_KEY&envDescription=Required%20environment%20variables%20for%20the%20Next.js%20Domain%20Parking%20Template&envLink=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template%23installation)
 
-See also: [How to get the current URL / domain](https://vercel.com/guides/nextjs-multi-tenant-application#2.-set-up-environment-variables)
+See also: [Framework Environment Variables](https://vercel.com/docs/projects/environment-variables/system-environment-variables#framework-environment-variables)
 
 ## Prerequisites
 
