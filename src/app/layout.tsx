@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name}`,
+  title: `${siteConfig.url} | For sale`,
   description: "This domain may be for sale, contact us for more information.",
 };
 
