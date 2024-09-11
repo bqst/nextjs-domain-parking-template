@@ -1,6 +1,10 @@
 # 🅿️ Next.js Domain Parking Template
 
-If you have a domain that you're not using like me, you can use this template to create a simple website that displays the domain for sale. This template includes a contact form that allows users to send messages via email. Upon form submission, an email is sent using Resend. Deploy this template with Vercel, configure the environment variables, and set up your domain to point to the Vercel deployment to start parking your domain.
+If you have a domain that you're not using like me, you can use this template to create a simple website that displays the domain for sale. This template includes a contact form that allows users to send messages via email. Upon form submission, an email is sent using Resend.
+
+Deploy this template with Vercel, configure the environment variables, and set up your domains to point to the Vercel deployment to start.
+
+You can add multiple domains to the Vercel deployment settings, content will be displayed based on the domain that the user is visiting.
 
 ## Deploy with Vercel
 
