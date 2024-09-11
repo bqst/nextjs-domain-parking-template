@@ -6,7 +6,7 @@ If you have a domain that you're not using like me, you can use this template to
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template&env=EMAIL_FROM,EMAIL_TO,RESEND_API_KEY&envDescription=Required%20environment%20variables%20for%20the%20Next.js%20Domain%20Parking%20Template&envLink=https%3A%2F%2Fgithub.com%2Fbqst%2Fnextjs-domain-parking-template%23installation)
 
-See also: [Framework Environment Variables](https://vercel.com/docs/projects/environment-variables/system-environment-variables#framework-environment-variables)
+Then, setup **Domains** in the Vercel dashboard to point to the deployment.
 
 ## Prerequisites
 
@@ -31,7 +31,6 @@ cp .env.example .env.local
 
 Fill in the following environment variables:
 
-- `NEXT_PUBLIC_VERCEL_URL`: The URL of the website (it should be set automatically by Vercel in production).
 - `EMAIL_FROM`: The email address that emails will be sent from.
 - `EMAIL_TO`: The email address that emails will be sent to.
 - `RESEND_API_KEY`: The API key from Resend.
