@@ -23,7 +23,7 @@ export default function ContactForm() {
             htmlFor="firstName"
             className="block text-sm font-semibold leading-6 text-gray-900"
           >
-            First name
+            First name <span className="text-red-500">*</span>
           </label>
           <div className="mt-2.5">
             <input
@@ -31,6 +31,7 @@ export default function ContactForm() {
               name="firstName"
               type="text"
               autoComplete="given-name"
+              placeholder="First name"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               required
             />
@@ -41,7 +42,7 @@ export default function ContactForm() {
             htmlFor="lastName"
             className="block text-sm font-semibold leading-6 text-gray-900"
           >
-            Last name
+            Last name <span className="text-red-500">*</span>
           </label>
           <div className="mt-2.5">
             <input
@@ -49,6 +50,7 @@ export default function ContactForm() {
               name="lastName"
               type="text"
               autoComplete="family-name"
+              placeholder="Last name"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               required
             />
@@ -59,7 +61,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="block text-sm font-semibold leading-6 text-gray-900"
           >
-            Email
+            Email <span className="text-red-500">*</span>
           </label>
           <div className="mt-2.5">
             <input
@@ -67,6 +69,7 @@ export default function ContactForm() {
               name="email"
               type="email"
               autoComplete="email"
+              placeholder="Email"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               required
             />
@@ -85,6 +88,7 @@ export default function ContactForm() {
               name="phone"
               type="tel"
               autoComplete="tel"
+              placeholder="Phone number"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
           </div>
@@ -101,6 +105,7 @@ export default function ContactForm() {
               id="message"
               name="message"
               rows={4}
+              placeholder="Message"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               defaultValue={""}
             />
