@@ -6,7 +6,7 @@ import { Resend } from "resend";
 
 export async function sendMessage(prevState: any, formData: FormData) {
   try {
-    const host = headers().get("host");
+    const host = (await headers()).get("host");
     const rawData = Object.fromEntries(formData.entries());
 
     const resend = new Resend(process.env.RESEND_API_KEY);

@@ -1,8 +1,8 @@
 import ContactForm from "@/components/contact-form";
 import { headers } from "next/headers";
 
-export default function Home() {
-  const host = headers().get("host");
+export default async function Home() {
+  const host = (await headers()).get("host");
 
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">

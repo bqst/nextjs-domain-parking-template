@@ -1,11 +1,10 @@
 "use client";
 
 import { sendMessage } from "@/actions";
-import { useRef } from "react";
-import { useFormState } from "react-dom";
+import { useActionState, useRef } from "react";
 
 export default function ContactForm() {
-  const [result, formAction] = useFormState(sendMessage, null);
+  const [result, formAction] = useActionState(sendMessage, null);
   const ref = useRef<HTMLFormElement>(null);
 
   return (

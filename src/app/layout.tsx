@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export async function generateMetadata() {
-  const host = headers().get("host");
+  const host = (await headers()).get("host");
 
   return {
     title: `${host} is for sale`,
